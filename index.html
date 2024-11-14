@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Малые народы России</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <div class="cover-container">
+            <img src="E:/malye-narody/foto/2df250f2-fdc2-5f33-a480-59fcdec4c962.jpg" alt="Фото обложки" class="cover-photo">
+            <div class="cover-text">
+                <h1>Малые народы России</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="map-section">
+            <div id="map"></div>
+            <div id="info">
+                <h2 id="tribe-name">Выберите народ</h2>
+                <p id="tribe-description">Описание появится здесь.</p>
+                <audio id="tribe-audio" controls>
+                    <source id="audio-source" src="" type="audio/mp3">
+                    Ваш браузер не поддерживает элемент audio.
+                </audio>
+                <img id="tribe-image" src="" alt="Изображение народа">
+
+                <!-- Дополнительный раздел с подробной информацией -->
+                <div id="additional-info">
+                    <h3>Подробнее о народе:</h3>
+                    <p id="tribe-traditions"></p>
+                    <p id="tribe-crafts"></p>
+                    <p id="tribe-legends"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Малые народы России</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
